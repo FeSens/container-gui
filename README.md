@@ -23,30 +23,24 @@ All actions provide instant feedback — the UI updates immediately, not on the 
 
 ## Install
 
-### Homebrew
+### Homebrew (recommended)
 
 ```bash
 brew tap FeSens/tap
-brew install container-gui
+brew install --cask container-gui
 ```
+
+This installs **Container GUI.app** into `/Applications`.
 
 ### Build from source
 
 ```bash
 git clone https://github.com/FeSens/container-gui.git
 cd container-gui
-swift build -c release
-# Binary is at .build/release/ContainerGUI
-cp .build/release/ContainerGUI /usr/local/bin/
+bash scripts/package-app.sh
+# App is at .build/package/Container GUI.app
+cp -r ".build/package/Container GUI.app" /Applications/
 ```
-
-## Usage
-
-```bash
-ContainerGUI
-```
-
-Or if installed via Homebrew, just run `container-gui` from anywhere.
 
 The app auto-detects the `container` CLI from `/opt/homebrew/bin/container`, `/usr/local/bin/container`, or your `$PATH`.
 
