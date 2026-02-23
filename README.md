@@ -2,7 +2,7 @@
 
 A native macOS GUI for Apple's [`container`](https://github.com/apple/container) CLI tool. Built with SwiftUI, designed for Apple Silicon.
 
-<img width="1100" alt="Container GUI Screenshot" src="https://github.com/user-attachments/assets/placeholder">
+<img width="1100" alt="Container GUI Screenshot" src="Assets/screenshot.png">
 
 ## Features
 
